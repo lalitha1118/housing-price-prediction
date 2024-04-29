@@ -1,6 +1,6 @@
 # Housing Price Prediction
 
-Use regression to predict price of electronic devices
+Use regression to predict price of houses
 
 Tip: If you don't have markdown viewer like atom, you can render this on chrome by following [this link](https://imagecomputing.net/damien.rohmer/teaching/general/markdown_viewer/index.html).
 
