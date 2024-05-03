@@ -1,22 +1,16 @@
 jobs:
   - name: data-cleaning
     stages:
-      - name: "clean-base-tables"
+      - name: "clean-housing-table"
         tasks:
-          - name: "product"
+          - name: "housingds"
             params: {}
-          - name: "orders"
-            params: {}
-
-      - name: "clean-derivative-tables"
-        tasks:
-          - name: "sales"
-            params: {}
+          
       - name: "train-test-split"
         tasks:
           - name: "train-test"
             params:
-              target: unit_price
+              target: "median_house_value"
               test_size: 0.2
 
   - name: feat-engg
@@ -24,19 +18,15 @@ jobs:
       - name: "feature-pipelines"
         tasks:
           - name: "transform-features"
-            params:
-              outliers:
-                method: mean
-                drop: False
-              sampling_fraction: 0.1
-
+            params: {}
+              
   - name: model-gen
     stages:
       - name: "model-creation"
         tasks:
           - name: "train-model"
-            params:
-              sampling_fraction: 0.1
+            params: {}
+              
 
   - name: model-eval
     stages:

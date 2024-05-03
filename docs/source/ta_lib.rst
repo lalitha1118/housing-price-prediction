@@ -21,6 +21,14 @@ Subpackages
 Submodules
 ----------
 
+ta\_lib.transformers module
+---------------------------
+
+.. automodule:: ta_lib.transformers
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 ta\_lib.version module
 ----------------------
 
