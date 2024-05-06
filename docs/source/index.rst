@@ -10,6 +10,7 @@ Welcome to Housing Price Prediction documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   modules
    project_overview
    developer_guide
    api_guide
